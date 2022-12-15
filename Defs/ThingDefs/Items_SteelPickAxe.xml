@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef Name="ResourceBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <category>Item</category>
+        <drawerType>MapMeshOnly</drawerType>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>75</stackLimit>
+        <statBases>
+          <Beauty>-4</Beauty>
+        </statBases>
+        <comps>
+          <li Class="CompProperties_Forbiddable"/>
+        </comps>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>14</pathCost>
+        <allowedArchonexusCount>-1</allowedArchonexusCount>
+      </ThingDef>
+
+    <ThingDef ParentName="ResourceBase">
+        <defName>SteelPickAxe</defName>
+        <label>steel pickaxe</label>
+        <description>A tool used for mining in a deep shaft.</description>
+        <graphicData>
+            <texPath>Mineshafts/Resource/Steel_Pickaxe</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <statBases>
+            <Mass>3</Mass>
+            <StuffPower_Armor_Sharp>0.9</StuffPower_Armor_Sharp>
+            <StuffPower_Armor_Blunt>0.45</StuffPower_Armor_Blunt>
+            <StuffPower_Armor_Heat>0.60</StuffPower_Armor_Heat>
+            <StuffPower_Insulation_Cold>3</StuffPower_Insulation_Cold>
+            <StuffPower_Insulation_Heat>0</StuffPower_Insulation_Heat>
+            <SharpDamageMultiplier>1</SharpDamageMultiplier>
+            <BluntDamageMultiplier>1</BluntDamageMultiplier>
+        </statBases>
+        <useHitPoints>false</useHitPoints>
+        <healthAffectsPrice>false</healthAffectsPrice>
+        <burnableByRecipe>false</burnableByRecipe>
+        <stuffProps>
+            <categories>
+                <li>Metallic</li>
+            </categories>
+            <appearance>Metal</appearance>
+            <commonality>1.00</commonality>
+            <constructEffect>ConstructMetal</constructEffect>
+            <color>(105,105,105)</color>
+            <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
+            <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+            <statFactors>
+                <MaxHitPoints>1</MaxHitPoints>
+                <Beauty>1</Beauty>
+                <Flammability>0.4</Flammability>
+            </statFactors>
+            <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+        </stuffProps>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <allowedArchonexusCount>80</allowedArchonexusCount>
+    </ThingDef>
+</Defs>

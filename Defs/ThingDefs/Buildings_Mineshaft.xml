@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BenchBase">
+        <defName>Mineshaft</defName>
+        <label>mineshaft</label>
+        <description>A deep dark mineshaft your pawns descend to bring you resources. Or something fun...</description>
+        <thingClass>Building_WorkTable</thingClass>
+        <graphicData>
+            <texPath>Mineshafts/Building/Mineshaft/mineshaft</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.5,3.5)</drawSize>
+            <shaderType>CutoutComplex</shaderType>
+            <shadowData>
+                <volume>(2.85, 0.3, 0.62)</volume>
+                <offset>(0, 0, 0.20)</offset>
+            </shadowData>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+        <rotatable>false</rotatable>
+        <costStuffCount>50</costStuffCount>
+        <costList>
+            <Steel>100</Steel>
+            <WoodLog>150</WoodLog>
+        </costList>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+        </stuffCategories>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>3000</WorkToBuild>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>0</Flammability>
+            <Cleanliness>-10</Cleanliness>
+        </statBases>
+        <size>(3,3)</size>
+        <designationCategory>Production</designationCategory>
+        <uiOrder>2300</uiOrder>
+        <passability>PassThroughOnly</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,0)</interactionCellOffset>
+        <interactionCellIcon>SteelPickAxe</interactionCellIcon>
+        <surfaceType>Item</surfaceType>
+        <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+        </building>
+    </ThingDef>
+</Defs>

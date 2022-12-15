@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef>
+        <defName>MakeMiningTools</defName>
+        <label>Make a steel pickaxe.</label>
+        <description>A basic steel pickaxe. Your ancestors used it and you will.
+        Used for mining in a deep mineshaft.</description>
+        <jobString>Making a steel pickaxe.</jobString>
+        <workAmount>1250</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Crafting</workSkill>
+        <soundWorking>Recipe_Machining</soundWorking>
+        <requiredGiverWorkType>Crafting</requiredGiverWorkType>
+        <allowMixingIngredients>false</allowMixingIngredients>
+        <skillRequirements>
+            <Crafting>3</Crafting>
+        </skillRequirements>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                    </thingDefs>
+                </filter>
+                <count>20</count>
+            </li>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>Steel</li>
+                    </thingDefs>
+                </filter>
+                <count>30</count>
+            </li>
+        </ingredients>
+        <products>
+            <SteelPickAxe>1</SteelPickAxe>
+        </products>
+        <fixedIngredientFilter>
+            <thingDefs>
+                <li>WoodLog</li>
+                <li>Steel</li>
+            </thingDefs>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

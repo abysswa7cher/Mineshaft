@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="UnfinishedBase">
+        <defName>UnfinishedMining</defName>
+        <label>unfinished mining</label>
+        <description>An unfinished mining job.</description>
+        <graphicData>
+            <texPath>Things/Item/Unfinished/UnfinishedSculpture</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <useHitPoints>false</useHitPoints>
+        <isUnfinishedThing>true</isUnfinishedThing>
+        <scatterableOnMapGen>false</scatterableOnMapGen>
+        <selectable>false</selectable>
+        <tradeability>None</tradeability>
+        <drawerType>MapMeshOnly</drawerType>
+        <!-- For CompForbiddable -->
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <DeteriorationRate>0</DeteriorationRate>
+            <Beauty>0</Beauty>
+            <Mass>1</Mass>            <!-- ingredients are added to this value -->
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Forbiddable"/>
+            <li Class="CompProperties_Styleable"/>
+        </comps>
+        <alwaysHaulable>false</alwaysHaulable>
+        <rotatable>false</rotatable>
+        <pathCost>14</pathCost>
+        <stuffCategories>
+            <li>Metallic</li>
+            <li>Woody</li>
+            <li>Stony</li>
+        </stuffCategories>
+    </ThingDef>
+</Defs>

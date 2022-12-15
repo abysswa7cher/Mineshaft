@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RecipeDef Name="Mining_Base">
+        <defName>MiningBase</defName>
+        <label>MiningBase</label>
+        <workSpeedStat>MiningSpeed</workSpeedStat>
+        <effectWorking>CutStone</effectWorking>
+        <soundWorking>Recipe_Smith</soundWorking>
+        <requiredGiverWorkType>Mining</requiredGiverWorkType>
+        <workSkill>Mining</workSkill>
+        <ingredients>
+            <li>
+                <filter>
+                    <thingDefs>
+                        <li>SteelPickAxe</li>
+                    </thingDefs>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    </RecipeDef>
+
+    <!-- === Steel === -->
+    <RecipeDef ParentName="Mining_Base">
+        <defName>Mine_Steel</defName>
+        <label>Mine for steel</label>
+        <description>Send your pawns to the mineshaft to mine for steel, the most common resource. Uses steel pickaxes in the process made on the Mining tool maker's table.</description>
+        <jobString>Mining for steel.</jobString>
+        <workAmount>12500</workAmount>
+        <products>
+            <Steel>60</Steel>
+        </products>
+        <recipeUsers>
+            <li>Mineshaft</li>
+        </recipeUsers>
+        <displayPriority>100</displayPriority>
+        <unfinishedThingDef>UnfinishedMining</unfinishedThingDef>
+    </RecipeDef>
+
+    <!-- === Plasteel === -->
+    <RecipeDef ParentName="Mining_Base">
+        <defName>Mine_Plasteel</defName>
+        <label>Mine for plasteel</label>
+        <description>Send your pawns to the mineshaft to mine for plasteel, the rarest and strongest material. Uses steel pickaxes in the process made on the Mining tool maker's table.</description>
+        <jobString>Mining for plasteel.</jobString>
+        <workAmount>22500</workAmount>
+        <products>
+            <Plasteel>20</Plasteel>
+        </products>
+        <recipeUsers>
+            <li>Mineshaft</li>
+        </recipeUsers>
+        <displayPriority>200</displayPriority>
+        <unfinishedThingDef>UnfinishedMining</unfinishedThingDef>
+    </RecipeDef>
+
+    <!-- === Silver === -->
+    <RecipeDef ParentName="Mining_Base">
+        <defName>Mine_Silver</defName>
+        <label>Mine for silver</label>
+        <description>Send your pawns to the mineshaft to mine for silver, a semi-rare precious metal. Uses steel pickaxes in the process made on the Mining tool maker's table.</description>
+        <jobString>Mining for silver.</jobString>
+        <workAmount>15000</workAmount>
+        <products>
+            <Silver>43</Silver>
+        </products>
+        <recipeUsers>
+            <li>Mineshaft</li>
+        </recipeUsers>
+        <displayPriority>300</displayPriority>
+        <unfinishedThingDef>UnfinishedMining</unfinishedThingDef>
+    </RecipeDef>
+
+    <!-- === Gold === -->
+    <RecipeDef ParentName="Mining_Base">
+        <defName>Mine_Gold</defName>
+        <label>Mine for gold.</label>
+        <description>Send your pawns to the mineshaft to mine for gold, a rare precious metal. Uses steel pickaxes in the process made on the Mining tool maker's table.</description>
+        <jobString>Mining for gold.</jobString>
+        <workAmount>20000</workAmount>
+        <products>
+            <Gold>20</Gold>
+        </products>
+        <recipeUsers>
+            <li>Mineshaft</li>
+        </recipeUsers>
+        <displayPriority>400</displayPriority>
+        <unfinishedThingDef>UnfinishedMining</unfinishedThingDef>
+    </RecipeDef>
+
+    <!-- === Granite === -->
+    <RecipeDef ParentName="Mining_Base">
+        <defName>Mine_Granite</defName>
+        <label>Mine for granite.</label>
+        <description>Send your pawns to the mineshaft to mine for granite chunks, a heavy and hard stone. Uses steel pickaxes in the process made on the Mining tool maker's table.</description>
+        <jobString>Mining for granite.</jobString>
+        <workAmount>15000</workAmount>
+        <products>
+            <ChunkGranite>10</ChunkGranite>
+        </products>
+        <recipeUsers>
+            <li>Mineshaft</li>
+        </recipeUsers>
+        <displayPriority>500</displayPriority>
+        <unfinishedThingDef>UnfinishedMining</unfinishedThingDef>
+    </RecipeDef>
+
+    <RecipeDef ParentName="Mining_Base">
+        <defName>Mine_Components</defName>
+        <label>Mine compacted machinery.</label>
+        <description>Send your pawns to the mineshaft to mine compacted machinery, a useful but uncommon material. Uses steel pickaxes in the process made on the Mining tool maker's table.</description>
+        <jobString>Mining for compacted machinery.</jobString>
+        <workAmount>20000</workAmount>
+        <products>
+            <ComponentIndustrial>13</ComponentIndustrial>
+        </products>
+        <recipeUsers>
+            <li>Mineshaft</li>
+        </recipeUsers>
+        <displayPriority>600</displayPriority>
+        <unfinishedThingDef>UnfinishedMining</unfinishedThingDef>
+    </RecipeDef>
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  <!-- ============= Mineshaft miner ============= -->
+
+  <WorkGiverDef>
+    <defName>DoBillsMineShaft</defName>
+    <label>mine for materials</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Mining</workType>
+    <priorityInType>100</priorityInType>
+    <fixedBillGiverDefs>
+      <li>Mineshaft</li>
+    </fixedBillGiverDefs>
+    <verb>mine</verb>
+    <gerund>mining</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+
+</Defs>
